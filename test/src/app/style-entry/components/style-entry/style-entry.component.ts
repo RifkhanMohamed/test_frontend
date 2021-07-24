@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-style-entry',
@@ -12,4 +13,11 @@ export class StyleEntryComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  form1 = new FormGroup({
+    status:new FormControl(''),
+    type:new FormControl(''),
+    number:new FormControl(''),
+    name:new FormControl(''),
+    quantity:new FormControl('')
+  })
 }

@@ -1,1 +1,75 @@
-<p>style-entry works!</p>
+<div>
+    <form action="" name="form1" [formGroup]="form1">
+        <div class="row">
+            <div class="col-sm-2">
+                <label for="">Style No</label>&nbsp;&nbsp;
+            </div>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-control-sm">
+            </div>
+            <div class="col-sm-2">
+                <label for="">Style Name</label>&nbsp;&nbsp;
+            </div>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-control-sm">
+            </div>
+        </div>
+        <br>
+        <div class="row">    
+            <div class="col-sm-2">
+                <label for="">Style Status</label>&nbsp;&nbsp;
+            </div>
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <input type="radio" formControlName="status" name="active" value="active" class="form-control form-control-sm">
+                        Active
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="radio" formControlName="status" value="inActive" class="form-control form-control-sm">
+                        Inactive
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="radio" formControlName="status" value="hold" class="form-control form-control-sm">
+                        Hold
+                    </div>  
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <label for="">Style Quantity</label>&nbsp;&nbsp;
+            </div>
+            <div class="col-sm-4">
+                <input type="number" class="form-control form-control-sm">
+            </div>
+        </div>
+        <br>
+        <div class="row">    
+            <div class="col-sm-2">
+                <label for="">Style Type</label>&nbsp;&nbsp;
+            </div>
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-sm-3"> 
+                        <input type="radio" formControlName="type" value="new" class="form-control form-control-sm">
+                        New
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="radio" formControlName="type" value="repeat" class="form-control form-control-sm">
+                        Repeat 
+                    </div> 
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="pull-right">
+                    <button class="btn btn-primary">Add</button>&nbsp;
+                    <button class="btn btn-primary">Delete</button>&nbsp;
+                    <button class="btn btn-primary">Save</button>&nbsp;
+                </div>
+                
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
