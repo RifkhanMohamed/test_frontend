@@ -22,15 +22,15 @@
             <div class="col-sm-4">
                 <div class="row">
                     <div class="col-sm-3">
-                        <input type="radio" formControlName="status" name="active" value="active" class="form-control form-control-sm">
+                        <input type="radio" formControlName="status" name="status" value="active" >
                         Active
                     </div>
                     <div class="col-sm-3">
-                        <input type="radio" formControlName="status" value="inActive" class="form-control form-control-sm">
+                        <input type="radio" formControlName="status" name="status" value="inActive" >
                         Inactive
                     </div>
                     <div class="col-sm-3">
-                        <input type="radio" formControlName="status" value="hold" class="form-control form-control-sm">
+                        <input type="radio" formControlName="status" name="status" value="hold" >
                         Hold
                     </div>  
                 </div>
@@ -50,11 +50,11 @@
             <div class="col-sm-4">
                 <div class="row">
                     <div class="col-sm-3"> 
-                        <input type="radio" formControlName="type" value="new" class="form-control form-control-sm">
+                        <input type="radio" formControlName="type" name="type" value="new" >
                         New
                     </div>
                     <div class="col-sm-3">
-                        <input type="radio" formControlName="type" value="repeat" class="form-control form-control-sm">
+                        <input type="radio" formControlName="type" name="type" value="repeat" >
                         Repeat 
                     </div> 
                 </div>
@@ -89,7 +89,7 @@
                     <td>
                         <select name="" id="">
                             <option value="">-select-</option>
-                            <option value="1">1</option>
+                            <option *ngFor="let data of category" value={{data.id}}>{{data.description}}</option>
                         </select>
                     </td>
                     <td>

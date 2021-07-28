@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { StyleEntryComponent } from './components/style-entry/style-entry.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ReactiveFormsModule,FormsModule } from "@angular/forms";
-
+import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
   {
@@ -20,6 +20,7 @@ const routes: Routes = [
     [RouterModule.forChild(routes)],
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule
   ]
 })
 export class StyleEntryModule { }
